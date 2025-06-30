@@ -151,12 +151,59 @@ export default {
   ],
   glosario: [
     {
-      termino: '',
-      significado: '',
+      termino: 'Aprendizaje adquirido',
+      significado:
+        'Se refiere al conocimiento, habilidades, competencias, actitudes o valores que una persona incorpora a través de la experiencia, el estudio, la instrucción, la observación o la práctica.',
     },
     {
-      termino: '',
-      significado: '',
+      termino: 'Aprendizaje vicario',
+      significado:
+        'También conocido como aprendizaje observacional, modelado o aprendizaje social, es un proceso en el que los individuos aprenden al observar las acciones y experiencias de los demás.',
+    },
+    {
+      termino: 'Apego',
+      significado:
+        'Es un vínculo afectivo intenso y duradero, que se desarrolla entre dos individuos, singularmente entre un niño y sus padres o cuidadores.',
+    },
+    {
+      termino: 'Atención',
+      significado:
+        'Es un proceso conductual y cognitivo de concentración selectiva en un aspecto discreto de la información, ya sea considerada subjetiva u objetiva, mientras que se ignoran otros aspectos perceptibles.',
+    },
+    {
+      termino: 'Imitación',
+      significado:
+        'Hace referencia a la acción que se realiza, intentando copiar otra o tomándola como ejemplo.',
+    },
+    {
+      termino: 'Mediación',
+      significado:
+        'Proceso intencionado que incluye métodos, técnicas, y actividades que se utilizan en el contexto educativo, para promover el aprendizaje, fomentando la construcción de conocimientos y el desarrollo de habilidades.',
+    },
+    {
+      termino: 'Memoria',
+      significado:
+        'Es la capacidad de almacenar, codificar y recuperar información. Es una función cerebral que nos permite aprender y adaptarnos a nuestro entorno.',
+    },
+    {
+      termino: 'Modelo de funcionamiento interno',
+      significado:
+        'Estructura cognitiva que vincula las representaciones mentales que hace el niño en sus primeras etapas y que le permiten comprender el entorno, su Yo y la relación con los demás.',
+    },
+    {
+      termino: 'Monotropía',
+      significado:
+        'El apego en el bebé se ancla sobre una única figura o figura principal, a modo de vínculo primario y más relevante, por encima de otros parientes o cuidadores.',
+    },
+    {
+      termino: 'Motivación',
+      significado:
+        'Conjunto de factores, tanto internos (necesidades, deseos, expectativas) como externos (recompensas, reconocimiento), que incitan a una persona a realizar una acción y a persistir en ella, hasta alcanzar un objetivo.',
+    },
+    {
+      termino: 'Privación materna',
+      significado:
+        'Se refiere a la separación o pérdida de la madre y la generación de problemas en el desarrollo del apego y, a futuro, dificultades asociadas con lo cognitivo, social y emocional.',
     },
   ],
 }
