@@ -18,7 +18,7 @@
         p La teoría del aprendizaje social afirma que cuando una persona interioriza un aprendizaje, también interactúa con lo que sucede en el entorno; por tanto, deja de ser un espectador o un simple receptor, pues el contexto genera una influencia sobre él, sobre su comportamiento y sobre la función de aprendizaje (variables cognitivas).
     
     .bg-full-width.bg-color-3.mb-5
-      .px-4.px-md-5
+      .p-4.py-lg-0.px-4.px-md-5
         .row.justify-content-center.align-items-center
           .col-lg-12
             .row.justify-content-center.align-items-center
