@@ -156,6 +156,11 @@
     
         
 
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
         h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
@@ -191,8 +196,199 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema2',
+  name: 'Tema3',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto: '¿Qué autor propone la teoría del apego?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Lawrence Kohlberg. ',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'John Bowlby.  ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Lev Vygotski.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Sigmund Freud.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              'John Bowlby (1907 - 1990) psicólogo y psicoanalista británico propuso que el apego se crea en la primera infancia y desempeña un papel fundamental en el posterior desarrollo y funcionamiento mental.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿En qué consiste la teoría propuesta por Albert Bandura (1925- 2021)? ',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Analiza el comportamiento humano y su relación con el entorno social. Plantea que las personas aprenden por observación e imitación de conductas de otros, por tanto, el efecto uno de los efectos de la interacción social es el aprendizaje conductual. ',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Desarrolla la teoría del apego y su relación con efectos a lo largo de la vida del ser humano.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Aporta los cambios en el desarrollo hormonal en los niños y adolescentes como parte del desarrollo social.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Genera las primeras explicaciones sobre el desarrollo evolutivo humano y sus evidencias en la primera infancia.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              'Bandura propone la teoría del aprendizaje social que analiza el comportamiento humano y su relación con el entorno social. Plantea que las personas aprenden por observación e imitación de conductas de otros, por tanto, el efecto uno de los efectos de la interacción social es el aprendizaje conductual. ',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              'Según Bandura, existen 4 procesos de mediación en los niños y niñas, los cuales son: ',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Atención, retención, reproducción y motivación.',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto: 'Apego seguro, evitativo, resistente y agresivo.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Prenatal, 0 - 6 meses, infancia y adolescencia.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Desarrollo genético, biológico, social y ecológico.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              'Los procesos de mediación de la teoría del aprendizaje social de Bandura son: atención, retención, reproducción y motivación.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              'De acuerdo con la teoría del apego, la separación a corto plazo de una figura de apego provoca angustia:',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'En etapas progresivas de protesta, desesperación y desapego.',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto:
+                  'En etapas desorganizadas que involucran: llanto, tristeza y estrés.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Enojo, agresión y estado evitativo.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Acciones variadas de acuerdo con el tipo de crianza y de contexto social del niño y la niña.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              'La separación a corto plazo genera angustia, la cual se expresa en etapas progresivas: protesta, desesperación y desapego.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              'Según Bowlby las conductas de apego son instintivas y se activarán por cualquier condición que parezca amenazar el logro de la proximidad, tales como la separación, la inseguridad o el miedo. ',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'El enunciado es incorrecto porque Bowlby afirmaba en la teoría del aprendizaje social que el comportamiento humano tiene relación con el entorno social.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'El enunciado es correcto porque el apego es una expresión biológica y evolutiva de los seres humanos, que le permite evadir peligro y sobrevivir.',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto:
+                  'El enunciado es incorrecto porque el logro de proximidad no guarda relación con la separación, la inseguridad o el miedo.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'D.	El enunciado es correcto porque el miedo es generado es causado por el apego, dado que es una conducta errada en la crianza.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              'El enunciado es correcto porque el apego es una expresión biológica y evolutiva de los seres humanos, que le permite evadir peligro y sobrevivir.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -201,4 +397,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
